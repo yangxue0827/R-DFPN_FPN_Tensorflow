@@ -51,13 +51,13 @@ tensorboard --logdir=./output/summary/
 
 # Test results   
 ![11](tools/test_result/0_gt.jpg)   
-![12](tools/test_result/符拉迪沃斯托克海军基地-基奥米德湾_2010-06-07%257200%254000_fpn.jpg)   
+![12](tools/test_result/0_fpn.jpg)   
      
-![13](tools/test_result/菲律宾-马尼拉军港_2015-02-17%252700%250_gt.jpg)   
-![14](tools/test_result/菲律宾-马尼拉军港_2015-02-17%252700%250_fpn.jpg)  
+![13](tools/test_result/1_gt.jpg)   
+![14](tools/test_result/1_fpn.jpg)  
 
-![15](tools/test_result/卡拉奇海军基地_2010-09-21%2510800%253000_gt.jpg)    
-![16](tools/test_result/卡拉奇海军基地_2010-09-21%2510800%253000_fpn.jpg)   
+![15](tools/test_result/2_gt.jpg)    
+![16](tools/test_result/2_fpn.jpg)   
      
-![17](tools/test_result/圣迭戈海军基地油库_2010-09-16%2515393%258000_gt.jpg)    
-![18](tools/test_result/圣迭戈海军基地油库_2010-09-16%2515393%258000_fpn.jpg)     
+![17](tools/test_result/3_gt.jpg)    
+![18](tools/test_result/3_fpn.jpg)     
