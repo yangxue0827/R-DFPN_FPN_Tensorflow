@@ -1,7 +1,7 @@
-# The code is being sorted out and the complete code and instructions are will uploaded soon.Stay tuned.
+# Papers are being submitted and the complete code and instructions are will uploaded soon.Stay tuned.
 
-A Tensorflow implementation of FPN or R2CNN detection framework based on FPN . 
-The paper references [R2CNN Rotational Region CNN for Orientation Robust Scene Text Detection](https://arxiv.org/abs/1706.09579) or [Feature Pyramid Networks for Object Detection](https://arxiv.org/abs/1612.03144)
+A Tensorflow implementation of R-DFPN detection framework based on FPN .    
+Another rotation detection method reference [R2CNN](https://github.com/yangxue0827/R2CNN_FPN_Tensorflow)
 
 # Configuration Environment
 ubuntu + python2 + tensorflow1.2 + cv2 + cuda8.0 + GeForce GTX 1080     
@@ -25,25 +25,20 @@ python ./data/io/convert_data_to_tfrecord.py --VOC_dir='***/VOCdevkit/VOCdevkit_
 
 # Train
 1、Configure parameters in ./libs/configs/cfgs.py and modify the project's root directory    
-2、Modify ./libs/lable_name_dict.py, corresponding to the number of categories in the configuration file    
+2、Modify ./libs/lable_name_dict/***_dict.py, corresponding to the number of categories in the configuration file    
 3、download pretrain weight([resnet_v1_101_2016_08_28.tar.gz](http://download.tensorflow.org/models/resnet_v1_101_2016_08_28.tar.gz) or [resnet_v1_50_2016_08_28.tar.gz](http://download.tensorflow.org/models/resnet_v1_50_2016_08_28.tar.gz)) from [here](https://github.com/yangxue0827/models/tree/master/slim), then extract to folder ./data/pretrained_weights    
-4、Choose a model(FPN and R2CNN)     
-If you want to train FPN:        
->python ./tools/train.py
-
-elif you want to train R2CNN:     
->python ./tools/train1.py
+4、python ./tools/train.py
 
 # Test tfrecord     
 mkdir test_result    
-python ./tools/test.py(test1.py)   
+python ./tools/test.py 
 
 # Test images  
 put images in ./tools/inference_image, and mkdir inference_result    
-python ./tools/inference.py(inference1.py)   
+python ./tools/inference.py   
 
 # eval   
-python ./tools/eval.py(eval1.py)
+python ./tools/ship_eval.py
 
 # Summary   
 tensorboard --logdir=./output/summary/   
@@ -55,14 +50,14 @@ tensorboard --logdir=./output/summary/
 ![04](graph.png) 
 
 # Test results   
-![11](tools/test_result/07_horizontal_gt.jpg)   
-![12](tools/test_result/07_horizontal_fpn.jpg)   
+![11](tools/test_result/符拉迪沃斯托克海军基地-基奥米德湾_2010-06-07%257200%254000_gt.jpg)   
+![12](tools/test_result/符拉迪沃斯托克海军基地-基奥米德湾_2010-06-07%257200%254000_fpn.jpg)   
      
-![13](tools/test_result/07_rotate_gt.jpg)   
-![14](tools/test_result/07_rotate_fpn.jpg)  
+![13](tools/test_result/菲律宾-马尼拉军港_2015-02-17%252700%250_gt.jpg)   
+![14](tools/test_result/菲律宾-马尼拉军港_2015-02-17%252700%250_fpn.jpg)  
 
-![15](tools/test_result/08_horizontal_gt.jpg)    
-![16](tools/test_result/08_horizontal_fpn.jpg)   
+![15](tools/test_result/卡拉奇海军基地_2010-09-21%2510800%253000_gt.jpg)    
+![16](tools/test_result/卡拉奇海军基地_2010-09-21%2510800%253000_fpn.jpg)   
      
-![17](tools/test_result/08_rotate_gt.jpg)    
-![18](tools/test_result/08_rotate_fpn.jpg)     
+![17](tools/test_result/圣迭戈海军基地油库_2010-09-16%2515393%258000_gt.jpg)    
+![18](tools/test_result/圣迭戈海军基地油库_2010-09-16%2515393%258000_fpn.jpg)     
