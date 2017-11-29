@@ -50,7 +50,7 @@ tensorboard --logdir=./output/summary/
 ![04](graph.png) 
 
 # Test results   
-![11](tools/test_result/符拉迪沃斯托克海军基地-基奥米德湾_2010-06-07%257200%254000_gt.jpg)   
+![11](tools/test_result/0_gt.jpg)   
 ![12](tools/test_result/符拉迪沃斯托克海军基地-基奥米德湾_2010-06-07%257200%254000_fpn.jpg)   
      
 ![13](tools/test_result/菲律宾-马尼拉军港_2015-02-17%252700%250_gt.jpg)   
