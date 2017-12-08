@@ -17,7 +17,7 @@ tf.app.flags.DEFINE_string('VOC_dir', None, 'Voc dir')
 tf.app.flags.DEFINE_string('xml_dir', 'Annotations', 'xml dir')
 tf.app.flags.DEFINE_string('image_dir', 'JPEGImages', 'image dir')
 tf.app.flags.DEFINE_string('save_name', 'test', 'save name')
-tf.app.flags.DEFINE_string('save_dir', cfgs.ROO_PATH + '/data/tfrecord/', 'save name')
+tf.app.flags.DEFINE_string('save_dir', cfgs.ROOT_PATH + '/data/tfrecord/', 'save name')
 tf.app.flags.DEFINE_string('img_format', '.tif', 'format of image')
 tf.app.flags.DEFINE_string('dataset', 'ship', 'dataset')
 FLAGS = tf.app.flags.FLAGS
