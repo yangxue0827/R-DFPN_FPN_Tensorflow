@@ -329,7 +329,9 @@ def voc_eval(rboxes, gboxes, iou_th, use_07_metric, mode):
                                (gbox_list[:, 3] - gbox_list[:, 1] + 1.) - inters)  # 并的面积
                         overlaps = inters / uni
                     else:
-                        overlaps = iou_rotate.iou_rotate_calculate1(np.array([rbox_list[:-1]]), gbox_list, use_gpu=False)[0]
+                        overlaps = iou_rotate.iou_rotate_calculate1(np.array([rbox_list[:-1]]),
+                                                                    gbox_list,
+                                                                    use_gpu=False)[0]
 
                     ovmax = np.max(overlaps)  # 取最大重合的面积
                     # print(ovmax)

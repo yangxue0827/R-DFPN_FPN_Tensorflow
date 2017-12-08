@@ -4,11 +4,12 @@ A Tensorflow implementation of R-DFPN detection framework based on FPN .
 Another rotation detection method reference [R2CNN](https://github.com/yangxue0827/R2CNN_FPN_Tensorflow)
 
 # Configuration Environment
-ubuntu + python2 + tensorflow1.2 + cv2 + cuda8.0 + GeForce GTX 1080     
-If you want to use cpu, you need to modify the parameters of NMS and IOU functions use_gpu = False    
+ubuntu(Encoding problems may occur on windows) + python2 + tensorflow1.2 + cv2 + cuda8.0 + GeForce GTX 1080     
+If you want to use cpu, you need to modify the parameters of NMS and IOU functions use_gpu = False in cfgs.py   
 You can also use docker environment, command: docker push yangxue2docker/tensorflow3_gpu_cv2_sshd:v1.0     
 
 # Make tfrecord   
+The image name is best in English.   
 The data is VOC format, reference [here](sample.xml)     
 data path format  
 VOCdevkit  
@@ -22,6 +23,9 @@ VOCdevkit
 
 python ./data/io/convert_data_to_tfrecord.py --VOC_dir='***/VOCdevkit/VOCdevkit_train/' --save_name='train' --img_format='.jpg' --dataset='ship'
 
+# Demo  
+put images in ./tools/inference_image  
+python ./tools/inference.py   
 
 # Train
 1、Configure parameters in ./libs/configs/cfgs.py and modify the project's root directory    
@@ -31,13 +35,9 @@ python ./data/io/convert_data_to_tfrecord.py --VOC_dir='***/VOCdevkit/VOCdevkit_
 
 # Test tfrecord     
 mkdir test_result    
-python ./tools/test.py 
+python ./tools/test.py  
 
-# Test images  
-put images in ./tools/inference_image, and mkdir inference_result    
-python ./tools/inference.py   
-
-# eval   
+# eval    
 python ./tools/ship_eval.py
 
 # Summary   
