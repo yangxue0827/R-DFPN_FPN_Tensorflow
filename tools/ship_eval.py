@@ -13,13 +13,12 @@ import os
 import time
 import pickle
 from data.io.read_tfrecord import next_batch
-from libs.configs import cfgs
 from libs.networks.network_factory import get_network_byname
 from libs.rpn import build_rpn
 from libs.fast_rcnn import build_fast_rcnn
 from libs.box_utils.coordinate_convert import back_forward_convert
 from libs.box_utils.boxes_utils import get_horizen_minAreaRectangle
-from libs.label_name_dict.remote_sensing_dict import *
+from libs.label_name_dict.label_dict import *
 from help_utils.tools import view_bar
 from tools import restore_model
 from libs.box_utils import iou_rotate
