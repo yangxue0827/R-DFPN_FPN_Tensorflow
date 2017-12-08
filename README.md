@@ -1,6 +1,6 @@
 # Papers are being submitted and the complete code and instructions are will uploaded soon.Stay tuned.
 
-A Tensorflow implementation of R-DFPN detection framework based on FPN .    
+A Tensorflow implementation of R-DFPN detection framework based on [FPN](https://github.com/yangxue0827/FPN_Tensorflow).    
 Another rotation detection method reference [R2CNN](https://github.com/yangxue0827/R2CNN_FPN_Tensorflow)
 
 # Configuration Environment
