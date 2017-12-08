@@ -9,7 +9,6 @@ sys.path.append('../')
 import tensorflow as tf
 import numpy as np
 import cv2
-import os
 import time
 from data.io import image_preprocess
 from libs.networks.network_factory import get_network_byname
