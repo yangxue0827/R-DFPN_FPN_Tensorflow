@@ -15,13 +15,12 @@ from libs.networks.network_factory import get_network_byname
 from libs.configs import cfgs
 from libs.rpn import build_rpn
 from libs.fast_rcnn import build_fast_rcnn
-from help_utils import tools
+from help_utils.tools import *
 from libs.box_utils.show_box_in_tensor import *
 from libs.box_utils.coordinate_convert import back_forward_convert
 from tools import restore_model, multi_gpu_parallel
 from libs.box_utils import nms_rotate
 
-RESTORE_FROM_RPN = False
 FLAGS = get_flags_byname(cfgs.NET_NAME)
 os.environ["CUDA_VISIBLE_DEVICES"] = cfgs.GPU_GROUP
 
@@ -244,8 +243,8 @@ def train():
             coord = tf.train.Coordinator()
             threads = tf.train.start_queue_runners(sess, coord)
 
-            summary_path = os.path.join(cfgs.SUMMARY_PATH, cfgs.VERSION)
-            tools.mkdir(summary_path)
+            summary_path = os.path.join(FLAGS.summary_path, cfgs.VERSION)
+            mkdir(summary_path)
             summary_writer = tf.summary.FileWriter(summary_path, graph=sess.graph)
 
             for step in range(cfgs.MAX_ITERATION):
@@ -284,8 +283,7 @@ def train():
                     summary_writer.flush()
 
                     save_dir = os.path.join(FLAGS.trained_checkpoint, cfgs.VERSION)
-                    if not os.path.exists(save_dir):
-                        os.mkdir(save_dir)
+                    mkdir(save_dir)
 
                     save_ckpt = os.path.join(save_dir, 'voc_'+str(_global_step)+'model.ckpt')
                     saver.save(sess, save_ckpt)

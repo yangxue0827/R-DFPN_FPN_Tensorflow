@@ -15,7 +15,7 @@ from data.io.read_tfrecord import next_batch
 from libs.configs import cfgs
 from libs.networks.network_factory import get_flags_byname
 from libs.networks.network_factory import get_network_byname
-from help_utils.tools import view_bar
+from help_utils.tools import *
 from libs.rpn import build_rpn
 from libs.fast_rcnn import build_fast_rcnn
 from libs.box_utils.coordinate_convert import back_forward_convert
@@ -187,7 +187,7 @@ def test(img_num):
                                                         boxes=_fast_rcnn_decode_boxes,
                                                         labels=_detection_category,
                                                         scores=_fast_rcnn_score)
-
+                mkdir(cfgs.TEST_SAVE_PATH)
                 cv2.imwrite(cfgs.TEST_SAVE_PATH + '/{}_fpn.jpg'.format(str(_img_name_batch[0]).split('.tif')[0]),
                             _img_batch_fpn)
 
