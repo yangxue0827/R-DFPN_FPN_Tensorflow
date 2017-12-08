@@ -62,7 +62,7 @@ def train():
                             inputs=img_batch,
                             gtboxes_and_label=gtboxes_and_label,
                             is_training=True,
-                            share_head=False,
+                            share_head=cfgs.SHARE_HEAD,
                             share_net=share_net,
                             anchor_ratios=cfgs.ANCHOR_RATIOS,
                             anchor_scales=cfgs.ANCHOR_SCALES,

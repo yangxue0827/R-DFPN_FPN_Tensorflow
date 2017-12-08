@@ -90,7 +90,7 @@ def eval_dict_convert(img_num, mode):
                             inputs=img_batch,
                             gtboxes_and_label=gtboxes_and_label,
                             is_training=False,
-                            share_head=False,
+                            share_head=cfgs.SHARE_HEAD,
                             share_net=share_net,
                             anchor_ratios=cfgs.ANCHOR_RATIOS,
                             anchor_scales=cfgs.ANCHOR_SCALES,
