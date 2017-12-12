@@ -29,32 +29,46 @@ VOCdevkit
 >>Annotation   
 >>JPEGImages   
 
-cd $R-DFPN_ROOT/data/io/    
-python convert_data_to_tfrecord.py --VOC_dir='***/VOCdevkit/VOCdevkit_train/' --save_name='train' --img_format='.jpg' --dataset='ship'
+  ```Shell    
+  cd $R-DFPN_ROOT/data/io/    
+  python convert_data_to_tfrecord.py --VOC_dir='***/VOCdevkit/VOCdevkit_train/' --save_name='train' --img_format='.jpg' --dataset='ship'   
+  ```
 
 # Demo   
 1、Unzip the weight $R-DFPN_ROOT/output/res101_trained_weights/*.rar    
 2、put images in $R-DFPN_ROOT/tools/inference_image   
 3、Configure parameters in $R-DFPN_ROOT/libs/configs/cfgs.py and modify the project's root directory     
-4、cd $R-DFPN_ROOT/tools
-5、python inference.py   
+4、     
+  ```Shell    
+  cd $R-DFPN_ROOT/tools
+  python inference.py    
+  ```
 
 # Train
 1、Modify $R-DFPN_ROOT/libs/lable_name_dict/***_dict.py, corresponding to the number of categories in the configuration file    
 2、download pretrain weight([resnet_v1_101_2016_08_28.tar.gz](http://download.tensorflow.org/models/resnet_v1_101_2016_08_28.tar.gz) or [resnet_v1_50_2016_08_28.tar.gz](http://download.tensorflow.org/models/resnet_v1_50_2016_08_28.tar.gz)) from [here](https://github.com/yangxue0827/models/tree/master/slim), then extract to folder $R-DFPN_ROOT/data/pretrained_weights    
-3、cd $R-DFPN_ROOT/tools    
-4、python train.py
+3、    
+  ```Shell    
+  cd $R-DFPN_ROOT/tools    
+  python train.py    
+  ```
 
 # Test tfrecord     
-cd $R-DFPN_ROOT/tools     
-python test.py  
+  ```Shell    
+  cd $R-DFPN_ROOT/tools     
+  python test.py     
+  ``` 
 
 # eval   
-cd $R-DFPN_ROOT/tools       
-python ship_eval.py
-
-# Summary   
-tensorboard --logdir=$R-DFPN_ROOT/output/res101_summary/   
+  ```Shell    
+  cd $R-DFPN_ROOT/tools       
+  python ship_eval.py    
+  ```
+  
+# Summary    
+  ```Shell    
+  tensorboard --logdir=$R-DFPN_ROOT/output/res101_summary/     
+  ```  
 ![01](output/res101_summary/fast_rcnn_loss.bmp) 
 ![02](output/res101_summary/rpn_loss.bmp) 
 ![03](output/res101_summary/total_loss.bmp) 
