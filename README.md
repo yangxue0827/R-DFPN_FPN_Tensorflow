@@ -35,10 +35,9 @@ python convert_data_to_tfrecord.py --VOC_dir='***/VOCdevkit/VOCdevkit_train/' --
 # Demo   
 1、Unzip the weight $R-DFPN_ROOT/output/res101_trained_weights/*.rar    
 2、put images in $R-DFPN_ROOT/tools/inference_image   
-3、Configure parameters in $R-DFPN_ROOT/libs/configs/cfgs.py and modify the project's root directory    
-4、Configure parameters in $R-DFPN_ROOT/libs/configs/cfgs.py and modify the project's root directory 
-5、cd $R-DFPN_ROOT/tools
-6、python inference.py   
+3、Configure parameters in $R-DFPN_ROOT/libs/configs/cfgs.py and modify the project's root directory     
+4、cd $R-DFPN_ROOT/tools
+5、python inference.py   
 
 # Train
 1、Modify $R-DFPN_ROOT/libs/lable_name_dict/***_dict.py, corresponding to the number of categories in the configuration file    
