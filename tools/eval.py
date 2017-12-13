@@ -385,7 +385,7 @@ def voc_eval(rboxes, gboxes, iou_th, use_07_metric, mode):
     # avoid division by zero in case first detection matches a difficult ground ruth
     ap = voc_ap(rec, prec, use_07_metric)
 
-    return rec, prec, ap
+    return rec, prec, ap, box_num
 
 
 if __name__ == '__main__':
@@ -399,7 +399,7 @@ if __name__ == '__main__':
     predict_dict = pickle.load(fr1)
     gtboxes_dict = pickle.load(fr2)
 
-    R, P, mAP, F = 0, 0, 0, 0
+    R, P, AP, F, num = [], [], [], [], []
 
     for label in NAME_LABEL_MAP.keys():
         if label == 'back_ground':
@@ -407,20 +407,29 @@ if __name__ == '__main__':
 
         rboxes, gboxes = get_single_label_dict(predict_dict, gtboxes_dict, label)
 
-        rec, prec, ap = voc_eval(rboxes, gboxes, 0.5, False, mode=mode)
+        rec, prec, ap, box_num = voc_eval(rboxes, gboxes, 0.5, False, mode=mode)
 
         recall = rec[-1]
         precision = prec[-1]
         F_measure = (2 * precision * recall) / (recall + precision)
         print('\n{}\tR:{}\tP:{}\tap:{}\tF:{}'.format(label, recall, precision, ap, F_measure))
-        R += recall
-        P += precision
-        mAP += ap
-        F += F_measure
-    print('\n{}\tR:{}\tP:{}\tmAP:{}\tF:{}'.format('Final', R / cfgs.CLASS_NUM,
-                                                 P / cfgs.CLASS_NUM,
-                                                 mAP / cfgs.CLASS_NUM,
-                                                 F / cfgs.CLASS_NUM))
+        R.append(recall)
+        P.append(precision)
+        AP.append(ap)
+        F.append(F_measure)
+        num.append(box_num)
+
+    R = np.array(R)
+    P = np.array(P)
+    AP = np.array(AP)
+    F = np.array(F)
+    num = np.array(num)
+    weights = num / np.sum(num)
+    Recall = np.sum(R * weights)
+    Precision = np.sum(P * weights)
+    mAP = np.sum(AP * weights)
+    F_measure = np.sum(F * weights)
+    print('\n{}\tR:{}\tP:{}\tmAP:{}\tF:{}'.format('Final', Recall, Precision, mAP, F_measure))
 
     fr1.close()
     fr2.close()
