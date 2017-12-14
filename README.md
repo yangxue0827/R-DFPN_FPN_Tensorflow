@@ -38,11 +38,16 @@ VOCdevkit
 1、Unzip the weight $R-DFPN_ROOT/output/res101_trained_weights/*.rar    
 2、put images in $R-DFPN_ROOT/tools/inference_image   
 3、Configure parameters in $R-DFPN_ROOT/libs/configs/cfgs.py and modify the project's root directory     
-4、     
+4、image slice          
   ```Shell    
   cd $R-DFPN_ROOT/tools
   python inference.py    
-  ```
+  ```    
+5、big image      
+  ```Shell    
+  cd $FPN_ROOT/tools
+  python demo.py   
+  ```      
 
 # Train
 1、Modify $R-DFPN_ROOT/libs/lable_name_dict/***_dict.py, corresponding to the number of categories in the configuration file    
