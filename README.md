@@ -1,7 +1,7 @@
 # Papers is under review and the complete code and instructions are will uploaded soon.Stay tuned.
 
 A Tensorflow implementation of R-DFPN detection framework based on [FPN](https://github.com/yangxue0827/FPN_Tensorflow).    
-Another rotation detection method reference [R2CNN](https://github.com/yangxue0827/R2CNN_FPN_Tensorflow)    
+Other rotation detection method reference [R2CNN](https://github.com/yangxue0827/R2CNN_FPN_Tensorflow) and [R2CNN_HEAD](https://github.com/yangxue0827/R2CNN_HEAD_FPN_Tensorflow)     
 If useful to you, please star to support my work. Thanks.      
 
 # Configuration Environment
@@ -16,8 +16,8 @@ You can also use docker environment, command: docker push yangxue2docker/tensorf
   ```    
 
 # Make tfrecord   
-The image name is best in English.   
-Image size w = 1000, h = 600.         
+The image name is best in English.         
+The data is VOC format, reference [here](sample.xml)     
 data path format  ($FPN_ROOT/data/io/divide_data.py)    
 VOCdevkit  
 >VOCdevkit_train  
