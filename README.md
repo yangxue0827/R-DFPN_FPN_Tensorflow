@@ -8,7 +8,7 @@ If useful to you, please star to support my work. Thanks.
 
 If you find R-DFPN useful in your research, please consider citing:
 
-    @article{yangxue_r-dfpn
+    @article{yangxue_r-dfpn:http://www.mdpi.com/2072-4292/10/1/132
         Author = {Xue Yang, Hao Sun, Kun Fu, Jirui Yang, Xian Sun, Menglong Yan and Zhi Guo},
         Title = {{R-DFPN}: Automatic Ship Detection in Remote Sensing Images from Google Earth of Complex Scenes Based on Multiscale Rotation Dense Feature Pyramid Networks},
         Journal = {Published in remote sensing},
