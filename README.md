@@ -1,5 +1,7 @@
 # [Rotation Dense Feature Pyramid Networks](http://www.mdpi.com/2072-4292/10/1/132)
-
+    
+# Some popular new re-implementation detectors (Faster-RCNN, FPN, R2CNN, RRPN, R-DFPN etc) will be upload in https://github.com/DetectionTeamUCAS soon and be evaluated in common data sets (VOC pascal, icdar). Stay tuned!     
+        	
 A Tensorflow implementation of R-DFPN detection framework based on [FPN](https://github.com/yangxue0827/FPN_Tensorflow).    
 Other rotation detection method reference [R2CNN](https://github.com/yangxue0827/R2CNN_FPN_Tensorflow), [RRPN](https://github.com/yangJirui/RRPN_FPN_Tensorflow) and [R2CNN_HEAD](https://github.com/yangxue0827/R2CNN_HEAD_FPN_Tensorflow)     
 If useful to you, please star to support my work. Thanks.      
