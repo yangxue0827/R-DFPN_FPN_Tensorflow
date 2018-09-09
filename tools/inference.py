@@ -19,7 +19,7 @@ from help_utils.tools import *
 from libs.configs import cfgs
 from tools import restore_model
 
-os.environ["CUDA_VISIBLE_DEVICES"] = "1"
+# os.environ["CUDA_VISIBLE_DEVICES"] = "1"
 
 
 def get_imgs():

@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="54059538-3273-4610-9242-e797b20eb34a" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/resnet_trained_weights/v3.part1.rar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/resnet_trained_weights/v3.part2.rar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/resnet_trained_weights/v3.part3.rar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/resnet_trained_weights/v3.part4.rar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/resnet_trained_weights/v3.part5.rar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/resnet_trained_weights/v3.part6.rar" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/FPN_v19.iml" afterPath="$PROJECT_DIR$/.idea/FPN_v19.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/io/image_preprocess.py" afterPath="$PROJECT_DIR$/data/io/image_preprocess.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/io/convert_data_to_tfrecord.py" afterPath="$PROJECT_DIR$/data/io/convert_data_to_tfrecord.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/io/read_tfrecord.py" afterPath="$PROJECT_DIR$/data/io/read_tfrecord.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/inference.py" afterPath="$PROJECT_DIR$/tools/inference.py" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,6 +26,7 @@
     <SUITE FILE_PATH="coverage/R-DFPN_FPN_Tensorflow$make_rotate_anchors.coverage" NAME="make_rotate_anchors Coverage Results" MODIFIED="1514032687159" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/libs/box_utils" />
     <SUITE FILE_PATH="coverage/FPN_v19$train.coverage" NAME="train Coverage Results" MODIFIED="1511668679300" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tools" />
     <SUITE FILE_PATH="coverage/FPN_v19$coordinate_convert.coverage" NAME="coordinate_convert Coverage Results" MODIFIED="1510467560137" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/libs/box_utils" />
+    <SUITE FILE_PATH="coverage/R-DFPN_FPN_Tensorflow$inference.coverage" NAME="inference Coverage Results" MODIFIED="1522551518864" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tools" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -42,21 +37,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="help_utils.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/help_utils/help_utils.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2600">
-              <caret line="53" column="11" selection-start-line="53" selection-start-column="8" selection-end-line="53" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="restore_model.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tools/restore_model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="20" column="70" selection-start-line="20" selection-start-column="70" selection-end-line="20" selection-end-column="86" />
+            <state relative-caret-position="312">
+              <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -66,7 +51,7 @@
         <entry file="file://$PROJECT_DIR$/libs/networks/network_factory.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1560">
-              <caret line="37" column="31" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
+              <caret line="37" column="36" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -75,21 +60,11 @@
       <file leaf-file-name="config_res101.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/configs/config_res101.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4160">
-              <caret line="84" column="1" selection-start-line="84" selection-start-column="1" selection-end-line="84" selection-end-column="1" />
+            <state relative-caret-position="4264">
+              <caret line="86" column="32" selection-start-line="86" selection-start-column="27" selection-end-line="86" selection-end-column="32" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="image_preprocess.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/data/io/image_preprocess.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="582">
-              <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -107,36 +82,61 @@
       <file leaf-file-name="cfgs.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/libs/configs/cfgs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4108">
-              <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+            <state relative-caret-position="52">
+              <caret line="36" column="17" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build_fast_rcnn.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/libs/fast_rcnn/build_fast_rcnn.py">
+      <file leaf-file-name="convert_data_to_tfrecord.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/io/convert_data_to_tfrecord.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-7974">
-              <caret line="418" column="12" selection-start-line="418" selection-start-column="12" selection-end-line="421" selection-end-column="90" />
-              <folding>
-                <element signature="e#25#63#0" expanded="true" />
-                <element signature="e#4154#4761#0" expanded="false" />
-                <element signature="e#4809#10693#0" expanded="false" />
-                <element signature="e#10728#12821#0" expanded="false" />
-                <element signature="e#12856#17034#0" expanded="false" />
-                <element signature="e#17074#18463#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="780">
+              <caret line="85" column="55" selection-start-line="85" selection-start-column="55" selection-end-line="85" selection-end-column="55" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="read_tfrecord.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="inference.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tools/inference.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="468">
+              <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="iou_rotate.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/libs/box_utils/iou_rotate.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="468">
+              <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="read_tfrecord.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/data/io/read_tfrecord.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="53" column="56" selection-start-line="53" selection-start-column="56" selection-end-line="53" selection-end-column="56" />
+            <state relative-caret-position="468">
+              <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build_rpn.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/libs/rpn/build_rpn.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="16536">
+              <caret line="330" column="37" selection-start-line="328" selection-start-column="36" selection-end-line="330" selection-end-column="37" />
+              <folding>
+                <element signature="e#27#65#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -179,28 +179,28 @@
         <option value="&lt;e3981fba-b989-4aec-9ceb-40c20c9bb147&gt;/output/res101_trained_weights/v5/checkpoint" />
         <option value="&lt;e3981fba-b989-4aec-9ceb-40c20c9bb147&gt;/output/res101_trained_weights/v4/checkpoint" />
         <option value="&lt;e3981fba-b989-4aec-9ceb-40c20c9bb147&gt;/output/res101_trained_weights/v7/checkpoint" />
-        <option value="$PROJECT_DIR$/libs/box_utils/iou_rotate.py" />
         <option value="$PROJECT_DIR$/libs/configs/cfgs8.py" />
         <option value="$PROJECT_DIR$/libs/configs/cfgs9.py" />
         <option value="$PROJECT_DIR$/data/io/divide_data.py" />
-        <option value="$PROJECT_DIR$/data/io/read_tfrecord.py" />
         <option value="$PROJECT_DIR$/help_utils/help_utils.py" />
         <option value="$PROJECT_DIR$/libs/box_utils/boxes_utils.py" />
         <option value="$PROJECT_DIR$/libs/box_utils/encode_and_decode.py" />
         <option value="$PROJECT_DIR$/libs/box_utils/image_crop_and_rotate.py" />
-        <option value="$PROJECT_DIR$/libs/rpn/build_rpn.py" />
-        <option value="$PROJECT_DIR$/data/io/convert_data_to_tfrecord.py" />
         <option value="$PROJECT_DIR$/tools/train.py" />
         <option value="$PROJECT_DIR$/tools/test.py" />
         <option value="$PROJECT_DIR$/tools/ship_eval.py" />
-        <option value="$PROJECT_DIR$/libs/configs/cfgs.py" />
-        <option value="$PROJECT_DIR$/tools/inference.py" />
         <option value="$PROJECT_DIR$/tools/eval.py" />
         <option value="$PROJECT_DIR$/libs/box_utils/show_box_in_tensor.py" />
         <option value="$PROJECT_DIR$/libs/box_utils/make_rotate_anchors.py" />
         <option value="$PROJECT_DIR$/tools/demo.py" />
         <option value="$PROJECT_DIR$/libs/fast_rcnn/build_fast_rcnn.py" />
         <option value="$PROJECT_DIR$/data/io/image_preprocess.py" />
+        <option value="$PROJECT_DIR$/tools/inference.py" />
+        <option value="$PROJECT_DIR$/libs/box_utils/iou_rotate.py" />
+        <option value="$PROJECT_DIR$/libs/rpn/build_rpn.py" />
+        <option value="$PROJECT_DIR$/libs/configs/cfgs.py" />
+        <option value="$PROJECT_DIR$/data/io/convert_data_to_tfrecord.py" />
+        <option value="$PROJECT_DIR$/data/io/read_tfrecord.py" />
       </list>
     </option>
   </component>
@@ -241,7 +241,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -257,102 +256,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="R-DFPN_FPN_Tensorflow" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="R-DFPN_FPN_Tensorflow" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="R-DFPN_FPN_Tensorflow" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tools" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="R-DFPN_FPN_Tensorflow" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="R-DFPN_FPN_Tensorflow" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="output" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="R-DFPN_FPN_Tensorflow" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="R-DFPN_FPN_Tensorflow" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="libs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="R-DFPN_FPN_Tensorflow" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="R-DFPN_FPN_Tensorflow" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="libs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fast_rcnn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="R-DFPN_FPN_Tensorflow" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="R-DFPN_FPN_Tensorflow" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="libs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="configs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="R-DFPN_FPN_Tensorflow" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="R-DFPN_FPN_Tensorflow" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="libs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="box_utils" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -391,6 +294,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -422,7 +326,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.make_rotate_anchors">
+  <component name="RunManager" selected="Python.inference">
     <configuration default="false" name="train" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -736,9 +640,9 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.make_rotate_anchors" />
-        <item index="1" class="java.lang.String" itemvalue="Python.show_box_in_tensor" />
-        <item index="2" class="java.lang.String" itemvalue="Python.inference" />
+        <item index="0" class="java.lang.String" itemvalue="Python.inference" />
+        <item index="1" class="java.lang.String" itemvalue="Python.make_rotate_anchors" />
+        <item index="2" class="java.lang.String" itemvalue="Python.show_box_in_tensor" />
         <item index="3" class="java.lang.String" itemvalue="Python.train" />
         <item index="4" class="java.lang.String" itemvalue="Python.iou_rotate" />
       </list>
@@ -762,7 +666,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24631861" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16566466" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16533066" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -851,13 +755,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/libs/box_utils/iou_rotate.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="75" column="44" selection-start-line="75" selection-start-column="44" selection-end-line="75" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.PyCharm2017.1/system/remote_sources/2131243403/1405239563/tensorflow/python/training/momentum.py" />
     <entry file="file://$PROJECT_DIR$/libs/configs/cfgs3.py" />
     <entry file="file://$PROJECT_DIR$/libs/box_utils/boxes_utils.py">
@@ -917,13 +814,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tools/inference_result/11_fpn.jpg" />
-    <entry file="file://$PROJECT_DIR$/libs/rpn/build_rpn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27040">
-          <caret line="532" column="42" selection-start-line="532" selection-start-column="42" selection-end-line="532" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/libs/configs/cfgs7.py" />
     <entry file="file://$PROJECT_DIR$/libs/configs/cfgs4.py" />
     <entry file="file://$PROJECT_DIR$/libs/configs/cfgs2.py" />
@@ -931,13 +821,6 @@
     <entry file="file://$PROJECT_DIR$/libs/configs/cfgs9.py" />
     <entry file="file://$PROJECT_DIR$/libs/configs/cfgs6.py" />
     <entry file="file://$PROJECT_DIR$/libs/configs/cfgs5.py" />
-    <entry file="file://$PROJECT_DIR$/data/io/convert_data_to_tfrecord.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tools/train.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3172">
@@ -966,13 +849,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tools/inference.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7904">
-          <caret line="155" column="28" selection-start-line="155" selection-start-column="28" selection-end-line="155" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/libs/box_utils/1.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -982,7 +858,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2600">
           <caret line="53" column="11" selection-start-line="53" selection-start-column="8" selection-end-line="53" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1016,37 +891,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/libs/configs/cfgs.py">
+    <entry file="file://$PROJECT_DIR$/libs/fast_rcnn/build_fast_rcnn.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4108">
-          <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="8736">
+          <caret line="418" column="12" selection-start-line="418" selection-start-column="12" selection-end-line="421" selection-end-column="90" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/libs/networks/network_factory.py">
+    <entry file="file://$PROJECT_DIR$/data/io/image_preprocess.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1560">
-          <caret line="37" column="31" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
+        <state relative-caret-position="2288">
+          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tools/restore_model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="20" column="70" selection-start-line="20" selection-start-column="70" selection-end-line="20" selection-end-column="86" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/configs/config_res101.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4160">
-          <caret line="84" column="1" selection-start-line="84" selection-start-column="1" selection-end-line="84" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1058,33 +914,78 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/libs/fast_rcnn/build_fast_rcnn.py">
+    <entry file="file://$PROJECT_DIR$/libs/networks/network_factory.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7974">
-          <caret line="418" column="12" selection-start-line="418" selection-start-column="12" selection-end-line="421" selection-end-column="90" />
+        <state relative-caret-position="1560">
+          <caret line="37" column="36" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/configs/config_res101.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4264">
+          <caret line="86" column="32" selection-start-line="86" selection-start-column="27" selection-end-line="86" selection-end-column="32" />
           <folding>
-            <element signature="e#25#63#0" expanded="true" />
-            <element signature="e#4154#4761#0" expanded="false" />
-            <element signature="e#4809#10693#0" expanded="false" />
-            <element signature="e#10728#12821#0" expanded="false" />
-            <element signature="e#12856#17034#0" expanded="false" />
-            <element signature="e#17074#18463#0" expanded="false" />
+            <element signature="e#0#38#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/restore_model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/inference.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/box_utils/iou_rotate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/rpn/build_rpn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16536">
+          <caret line="330" column="37" selection-start-line="328" selection-start-column="36" selection-end-line="330" selection-end-column="37" />
+          <folding>
+            <element signature="e#27#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/configs/cfgs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="36" column="17" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/io/convert_data_to_tfrecord.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="85" column="55" selection-start-line="85" selection-start-column="55" selection-end-line="85" selection-end-column="55" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/io/read_tfrecord.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="53" column="56" selection-start-line="53" selection-start-column="56" selection-end-line="53" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/io/image_preprocess.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="582">
-          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+        <state relative-caret-position="468">
+          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
           <folding />
         </state>
       </provider>

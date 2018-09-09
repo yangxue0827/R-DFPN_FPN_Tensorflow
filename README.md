@@ -46,6 +46,12 @@ data path format  ($DFPN_ROOT/data/io/divide_data.py)
   python convert_data_to_tfrecord.py --VOC_dir='***/VOCdevkit/VOCdevkit_train/' --save_name='train' --img_format='.jpg' --dataset='ship'   
   ```
 
+## Compile
+```  
+cd $R-DFPN_ROOT/libs/box_utils/
+python setup.py build_ext --inplace
+```
+
 ## Demo   
 1、Unzip the weight $R-DFPN_ROOT/output/res101_trained_weights/*.rar    
 2、put images in $R-DFPN_ROOT/tools/inference_image   
